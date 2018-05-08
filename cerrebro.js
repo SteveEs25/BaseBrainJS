@@ -21,6 +21,10 @@ window.onload = function() {
     console.log("Rojo " + ColorRGB.r);
     console.log("Azul " + ColorRGB.b);
     console.log("Verde " + ColorRGB.g);
+
+    var Resultado = brain.likely(ColorRGB, Neurona);
+    console.log("Resultado " + Resultado);
+    Spoiler.style.color = Resultado === "claro" ? "white" : "black"
   })
 
   function getRgb(hex) {
